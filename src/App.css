@@ -1,0 +1,459 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", "Roboto", Arial, sans-serif;
+  background: #faf9f6;
+  color: #263238;
+}
+
+.app {
+  min-height: 100vh;
+  background: #faf9f6;
+}
+
+/* Navbar */
+
+.navbar {
+  background: #ffffff !important;
+  color: #263238 !important;
+}
+
+.nav-container {
+  max-width: 1200px;
+  width: 100%;
+  margin: auto;
+  padding: 12px 24px !important;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #e86a33;
+  font-weight: 700;
+}
+
+.logo svg {
+  font-size: 30px;
+}
+
+.logo h6 {
+  font-weight: 800;
+}
+
+.nav-links {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+  margin-right: 25px;
+}
+
+.nav-links button {
+  color: #455a64;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.nav-links button:hover {
+  color: #e86a33;
+}
+
+.mobile-menu-button {
+  display: none !important;
+  color: #455a64 !important;
+}
+
+.mobile-nav-list {
+  width: min(82vw, 320px);
+  padding-top: 18px !important;
+}
+
+#home,
+#adoptable,
+#how-it-works,
+#about {
+  scroll-margin-top: 84px;
+}
+
+.nav-button {
+  background: #e86a33 !important;
+  border-radius: 25px !important;
+  padding: 9px 22px !important;
+  text-transform: none !important;
+  font-weight: 700 !important;
+}
+
+.nav-button:hover {
+  background: #d95d28 !important;
+}
+
+/* Hero */
+
+.hero {
+  padding: 90px 0;
+  background: #fff3e9;
+}
+
+.hero-chip {
+  background: #ffe0cc !important;
+  color: #d95d28 !important;
+  font-weight: 600 !important;
+  margin-bottom: 22px;
+}
+
+.hero-title {
+  font-size: 58px !important;
+  line-height: 1.08 !important;
+  font-weight: 800 !important;
+  letter-spacing: -2px !important;
+  color: #263238;
+}
+
+.hero-title span {
+  color: #e86a33;
+}
+
+.hero-text {
+  max-width: 520px;
+  font-size: 18px !important;
+  line-height: 1.7 !important;
+  color: #607d8b;
+  margin-top: 22px !important;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 32px;
+}
+
+.primary-button {
+  background: #e86a33 !important;
+  padding: 12px 25px !important;
+  border-radius: 30px !important;
+  text-transform: none !important;
+  font-weight: 700 !important;
+}
+
+.primary-button:hover {
+  background: #d95d28 !important;
+}
+
+.secondary-button {
+  border-color: #e86a33 !important;
+  color: #e86a33 !important;
+  padding: 12px 25px !important;
+  border-radius: 30px !important;
+  text-transform: none !important;
+  font-weight: 700 !important;
+}
+
+.hero-image-wrapper {
+  padding: 15px;
+}
+
+.hero-image {
+  width: 100%;
+  height: 470px;
+  object-fit: cover;
+  border-radius: 35px;
+  box-shadow: 0 20px 50px rgba(70, 50, 30, 0.15);
+}
+
+/* Pets */
+
+.pets-section {
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+
+.section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  margin-bottom: 35px;
+  gap: 30px;
+}
+
+.section-title {
+  font-weight: 800 !important;
+  color: #263238;
+}
+
+.section-subtitle {
+  color: #78909c;
+  margin-top: 8px !important;
+}
+
+.search-box {
+  width: 280px;
+}
+
+.search-box .MuiOutlinedInput-root {
+  border-radius: 30px;
+  background: white;
+}
+
+/* Pet Cards */
+
+.pet-card {
+  border-radius: 22px !important;
+  overflow: hidden;
+  background: #ffffff !important;
+  box-shadow: 0 8px 30px rgba(50, 50, 50, 0.08) !important;
+  transition: 0.3s ease;
+}
+
+.pet-card:hover {
+  transform: translateY(-7px);
+  box-shadow: 0 15px 40px rgba(50, 50, 50, 0.14) !important;
+}
+
+.pet-image-wrapper {
+  position: relative;
+}
+
+.pet-image {
+  height: 245px;
+  object-fit: cover;
+}
+
+.favorite-button {
+  position: absolute !important;
+  right: 15px;
+  top: 15px;
+  background: white !important;
+  box-shadow: 0 3px 12px rgba(0, 0, 0, 0.12);
+}
+
+.favorite-button:hover {
+  color: #e86a33;
+}
+
+.pet-name-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.pet-name {
+  font-weight: 800 !important;
+}
+
+.pet-type {
+  background: #fff0e6 !important;
+  color: #e86a33 !important;
+  font-weight: 600 !important;
+}
+
+.pet-age {
+  color: #78909c;
+  margin-top: 5px !important;
+}
+
+.pet-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #78909c;
+  margin-top: 10px;
+}
+
+.pet-location svg {
+  color: #e86a33;
+}
+
+.pet-card .MuiCardActions-root {
+  padding: 0 16px 18px;
+}
+
+.adopt-button {
+  background: #263238 !important;
+  border-radius: 25px !important;
+  text-transform: none !important;
+  font-weight: 700 !important;
+  padding: 10px !important;
+}
+
+.adopt-button:hover {
+  background: #e86a33 !important;
+}
+
+.no-results {
+  text-align: center;
+  padding: 50px;
+  color: #78909c;
+}
+
+/* How It Works */
+
+.how-section {
+  padding: 80px 0;
+  background: #fff3e9;
+}
+
+.center {
+  text-align: center;
+}
+
+.steps {
+  margin-top: 40px !important;
+}
+
+.step-card {
+  padding: 35px;
+  text-align: center;
+  border-radius: 22px !important;
+  box-shadow: none !important;
+  height: 100%;
+}
+
+.step-icon {
+  width: 65px;
+  height: 65px;
+  margin: 0 auto 20px;
+  border-radius: 50%;
+  background: #fff0e6;
+  color: #e86a33;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.step-icon svg {
+  font-size: 30px;
+}
+
+.step-card h6 {
+  font-weight: 800;
+  margin-bottom: 12px;
+}
+
+.step-card p {
+  color: #78909c;
+  line-height: 1.7;
+}
+
+/* Footer */
+
+.footer {
+  background: #263238;
+  color: white;
+  padding: 30px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-logo {
+  color: #ff9b68;
+}
+
+.footer-content p {
+  color: #b0bec5;
+}
+
+.application-form {
+  display: grid;
+  gap: 18px;
+}
+
+.dialog-copy {
+  line-height: 1.6 !important;
+}
+
+/* Responsive */
+
+@media (max-width: 900px) {
+  .nav-links {
+    display: none;
+  }
+
+  .mobile-menu-button {
+    display: inline-flex !important;
+    margin-left: auto !important;
+  }
+
+  .hero {
+    padding: 60px 0;
+  }
+
+  .hero-title {
+    font-size: 45px !important;
+  }
+
+  .hero-image {
+    height: 380px;
+  }
+
+  .section-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .search-box {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .nav-container {
+    padding: 10px 16px !important;
+  }
+
+  .nav-button {
+    padding: 8px 13px !important;
+    min-width: auto !important;
+    margin-left: 4px !important;
+  }
+
+  .nav-button .MuiButton-startIcon {
+    margin-right: 4px;
+  }
+
+  .hero {
+    padding: 45px 0;
+  }
+
+  .hero-title {
+    font-size: 38px !important;
+  }
+
+  .hero-text {
+    font-size: 16px !important;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+  }
+
+  .hero-buttons button {
+    width: 100%;
+  }
+
+  .hero-image {
+    height: 300px;
+    border-radius: 25px;
+  }
+
+  .pets-section {
+    padding-top: 55px;
+    padding-bottom: 60px;
+  }
+
+  .section-title {
+    font-size: 30px !important;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
